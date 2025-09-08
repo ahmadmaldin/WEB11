@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hasil Formulir</title>
+</head>
+<body>
+  <h1>Hasil Formulir</h1>
+
+  <table border="1" cellpadding="5" cellspacing="0" id="tabelHasil">
+    <tr>
+      <th>Nama Field</th>
+      <th>Isi</th>
+    </tr>
+  </table>
+
+  <p><a href="formulir.html">Kembali ke Form</a></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const tabel = document.getElementById("tabelHasil");
+
+    for (const [key, value] of params.entries()) {
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${key}</td><td>${value}</td>`;
+      tabel.appendChild(row);
+    }
+  </script>
+</body>
+</html>
