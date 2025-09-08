@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Maldin</title>
+</head>
+<body>
+  <h3>Formulir (Metode GET)</h3>
+  <form action="hasil.html" method="get">
+    <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <td>Nama</td>
+        <td><input type="text" name="nama" required></td>
+    </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" placeholder="e.g emailmu@gmail.com"></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td><input type="password" name="password" required></td>
+      </tr>
+      <tr>
+        <td>Umur</td>
+        <td><input type="number" name="umur" min="1" max="100"></td>
+      </tr>
+      <tr>
+        <td>Tanggal Lahir</td>
+        <td><input type="date" name="tgl_lahir"></td>
+      </tr>
+      <tr>
+        <td>Jam Lahir</td>
+        <td><input type="time" name="jam_lahir"></td>
+      </tr>
+    <tr>
+        <td>Warna Favorit</td>
+        <td><input type="color" name="warna"></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>
+          <input type="radio" name="gender" value="Pria"> Pria
+          <input type="radio" name="gender" value="Wanita"> Wanita
+        </td>
+      </tr>
+      <tr>
+        <td>Hobi</td>
+        <td>
+          <input type="checkbox" name="hobi" value="Membaca"> Membaca
+          <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+          <input type="checkbox" name="hobi" value="Musik"> Musik
+        </td>
+      </tr>
+      <tr>
+        <td>Jurusan</td>
+        <td>
+          <select name="jurusan">
+            <option value="Jurusan belum dipilih">Pilih Jurusan</option>
+            <option value="Pengembangan Perangkat Lunak dan Gim">PPLG</option>
+            <option value="Teknik Jaringan Komputer dan Komunikasi">TJKJ</option>
+            <option value="Desain Komunikasi Visual">DKV</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Alamat</td>
+        <td><textarea name="alamat" rows="3" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td>Upload Foto</td>
+        <td><input type="file" name="foto"></td>
+      </tr>
+      <tr>
+        <td>Nilai diharapkan</td>
+      <td><input type="range" name="nilai" min="0" max="95"></td>
+      </tr>
+    <tr>
+        <td>Status</td>
+        <td><input type="text" name="status" value="Siswa" readonly></td>
+      </tr>
+          <tr>
+        <td>Sekolah</td>
+        <td><input type="text" name="sekolah" value="SMKS Al Mamun" hidden></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Kirim">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
